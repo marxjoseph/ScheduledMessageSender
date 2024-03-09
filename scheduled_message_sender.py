@@ -8,7 +8,7 @@ from datetime import datetime
 
 # Twilio credentials
 account_sid = "ACebc1d895587fcd3a77ca20bbc37924a7"
-auth_token = "2450a76121ba94e3c28aa25c42d85e10"
+auth_token = "xxx"
 twilio_phone_number = "+15315354346"
 recipient_phone_number = "+14168337383"
 
