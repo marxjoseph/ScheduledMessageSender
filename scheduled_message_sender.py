@@ -8,7 +8,7 @@ from datetime import datetime
 
 # Twilio credentials
 account_sid = "ACebc1d895587fcd3a77ca20bbc37924a7"
-auth_token = "XXX"
+auth_token = "XXXX"
 twilio_phone_number = "+15315354346"
 recipient_phone_number = "+14168337383"
 
@@ -42,8 +42,8 @@ def main():
 
     while(True):
         print("Would you like this message to be (Enter \"1\", \"2\", or \"3\"):")
-        print("1: Occurring every day X amount of times at a sceduled time")
-        print("2: Happening once X amount of times at a scheduled time")
+        print("1: Occurring every day X amount of times at a scheduled time")
+        print("2: Occurring once X amount of times at a scheduled time")
         print("3: Occurring now X amount of times")
         global occurrence
         occurrence = input("Enter Option: ")
