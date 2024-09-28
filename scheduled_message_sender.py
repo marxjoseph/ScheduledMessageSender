@@ -3,14 +3,17 @@ import time
 import signal
 import sys
 import re
+import os
 from twilio.rest import Client
 from datetime import datetime
+from dotenv import load_dotenv
 
 # Twilio credentials
-account_sid = "ACebc1d895587fcd3a77ca20bbc37924a7"
-auth_token = "XXXX"
-twilio_phone_number = "+15315354346"
-recipient_phone_number = "+14168337383"
+load_dotenv()
+account_sid = os.getenv('account_sid')
+auth_token = os.getenv('auth_token')
+twilio_phone_number = os.getenv('twilio_phone_number')
+recipient_phone_number = os.getenv('recipient_phone_number')
 
 # Function to send SMS
 def send_sms(message_body, times_sent, sched_once):
